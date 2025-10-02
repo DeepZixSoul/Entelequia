@@ -1,0 +1,33 @@
+:root {
+  /* Colores principales */
+  --color-primary: #3a6b35; /* Verde bosque */
+  --color-secondary: #8d6748; /* Marrón cálido */
+  --color-accent: #00bcd4; /* Azul cian mágico */
+  --color-crystal: #b3e6f9; /* Azul cristal geométrico */
+  --color-warning: #e0b973; /* Dorado suave para detalles */
+
+  /* Navbar */
+  --color-navbar-text: #FAF3E0;
+
+  /* Fondo y texto */
+  --color-bg-light: #FAF3E0;
+  --color-bg-dark: #181818;
+  --color-text-light: #181818;
+  --color-text-dark: #FAF3E0;
+
+  /* Otros */
+  --color-card: #fff;
+  --color-card-dark: #232323;
+  --color-border: #d6c7b0;
+  --color-shadow: rgba(60, 40, 20, 0.08);
+}
+
+[data-theme="dark"] {
+  --color-bg-light: #181818;
+  --color-bg-dark: #181818;
+  --color-text-light: #FAF3E0;
+  --color-text-dark: #FAF3E0;
+  --color-card: #232323;
+  --color-border: #3a6b35;
+  --color-shadow: rgba(0,0,0,0.25);
+}

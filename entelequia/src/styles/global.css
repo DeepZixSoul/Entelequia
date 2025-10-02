@@ -1,0 +1,21 @@
+
+@import url('./colors.css');
+
+/* Reset y utilidades mínimas */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: var(--color-bg-light);
+  color: var(--color-text-light);
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+
+

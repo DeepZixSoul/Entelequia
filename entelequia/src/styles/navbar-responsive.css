@@ -1,0 +1,52 @@
+/*
+  navbar-responsive.css
+  Estilos responsivos y adaptativos para el Navbar principal.
+  Usa variables globales y media queries para una experiencia óptima en móvil, tablet y desktop.
+*/
+
+
+
+/* Tablet: menú más grande, mayor separación */
+@media (max-width: 1024px) and (min-width: 601px) {
+  .main-navbar ul {
+    gap: 2.5rem;
+    padding: 1.2rem 0;
+  }
+  .tab-btn {
+    font-size: 1.15rem;
+    padding: 0.7rem 1.5rem;
+  }
+}
+
+/* Móvil: menú horizontal scrollable, botones más grandes y accesibles */
+@media (max-width: 600px) {
+  .main-navbar ul {
+    gap: 0.5rem;
+    padding: 0.7rem 0.2rem;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    scrollbar-width: thin;
+  }
+  .main-navbar li {
+    min-width: 120px;
+    flex: 0 0 auto;
+  }
+  .tab-btn {
+    font-size: 1rem;
+    padding: 0.7rem 0.7rem;
+    border-radius: 1.2rem;
+    min-width: 100%;
+  }
+  .main-navbar {
+    box-shadow: 0 2px 8px var(--color-shadow, #0002);
+    border-bottom-width: 1px;
+  }
+}
+
+/* Accesibilidad: scroll suave para el navbar en móvil */
+@media (max-width: 600px) {
+  .main-navbar ul {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+}
